@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fullBody {
+    height: 520px;
+    border: 2px solid white;
+    width: 280px;
+    border-radius: 13px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#displayBody {
+    position: relative;
+    height: 150px;
+    width: 250px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 30px;
+}
+
+
+#buttonContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    border: 1px solid rgb(214, 206, 206);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 5px 0px;
+
+}
+
+button[data-value='+'],
+button[data-value='-'],
+button[data-value='*'],
+button[data-value='/'],
+button[id='allClear'],
+button[id='clear'],
+button[id='back'],
+button[data-value='.']{
+    background-color: rgb(230, 230, 230);
+}
+
+button[id ='equals']{
+ background-color: rgb(253, 186, 62);
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button[id ='equals']{
+    opacity: 0.8;
+}
